@@ -5,7 +5,8 @@ const fetch = require('node-fetch')
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const say = require('say')
+const Say = require('say').Say
+const say = new Say('darwin' || 'win32' || 'linux')
 
 const port = process.env.PORT || 3000
 
